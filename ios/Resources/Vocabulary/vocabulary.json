@@ -1,0 +1,391 @@
+{
+  "version": "1.0.0",
+  "vocabularies": {
+    "leaf": {
+      "attributes": {
+        "arrangement": [
+          {"id": "opposite", "label": "Opposite", "aliases": [], "description": "Leaves paired at a node, directly across from each other."},
+          {"id": "alternate", "label": "Alternate", "aliases": [], "description": "Single leaf at each node, alternating sides along the stem."},
+          {"id": "whorled", "label": "Whorled", "aliases": [], "description": "Three or more leaves at a single node."},
+          {"id": "basal_rosette", "label": "Basal rosette", "aliases": ["rosette"], "description": "Leaves radiate from ground level forming a rosette."},
+          {"id": "subopposite", "label": "Subopposite", "aliases": [], "description": "Leaves nearly opposite but slightly offset."}
+        ],
+        "attachment": [
+          {"id": "petiolate", "label": "Petiolate", "aliases": ["with petiole"], "description": "Leaf blade attached by a petiole (stalk)."},
+          {"id": "sessile", "label": "Sessile", "aliases": [], "description": "Leaf blade attached directly to stem without petiole."},
+          {"id": "clasping", "label": "Clasping", "aliases": [], "description": "Leaf base partly surrounds the stem."},
+          {"id": "perfoliate", "label": "Perfoliate", "aliases": [], "description": "Stem appears to pass through the leaf blade."},
+          {"id": "sheathing", "label": "Sheathing", "aliases": [], "description": "Leaf base forms a sheath around the stem (common in monocots)."}
+        ],
+        "complexity": [
+          {"id": "simple", "label": "Simple", "aliases": [], "description": "Single blade; not divided into leaflets."},
+          {"id": "compound_pinnate", "label": "Compound (pinnate)", "aliases": ["pinnately compound"], "description": "Leaflets arranged along a central axis."},
+          {"id": "compound_bipinnate", "label": "Compound (bipinnate)", "aliases": [], "description": "Leaflets themselves are divided into smaller leaflets."},
+          {"id": "compound_palmate", "label": "Compound (palmate)", "aliases": ["palmately compound"], "description": "Leaflets radiate from a single point."},
+          {"id": "trifoliate", "label": "Trifoliate", "aliases": ["three leaflets"], "description": "Compound leaf with three leaflets."}
+        ],
+        "venation": [
+          {"id": "pinnate", "label": "Pinnate", "aliases": [], "description": "One main midrib with lateral veins."},
+          {"id": "palmate", "label": "Palmate", "aliases": [], "description": "Several main veins radiate from a single point."},
+          {"id": "parallel", "label": "Parallel", "aliases": [], "description": "Multiple veins run parallel (common in monocots)."},
+          {"id": "arcuate", "label": "Arcuate", "aliases": [], "description": "Veins curve toward the tip."},
+          {"id": "reticulate", "label": "Reticulate", "aliases": ["netted"], "description": "Veins form a network."},
+          {"id": "dichotomous", "label": "Dichotomous", "aliases": [], "description": "Veins repeatedly fork into two (e.g., Ginkgo)."}
+        ],
+        "margin": [
+          {"id": "entire", "label": "Entire", "aliases": ["smooth"], "description": "Smooth, without teeth or lobes."},
+          {"id": "serrate", "label": "Serrate", "aliases": [], "description": "Saw‑toothed with forward‑pointing teeth."},
+          {"id": "dentate", "label": "Dentate", "aliases": [], "description": "Toothed with outward‑pointing teeth."},
+          {"id": "crenate", "label": "Crenate", "aliases": [], "description": "Rounded teeth (scalloped)."},
+          {"id": "lobed", "label": "Lobed", "aliases": [], "description": "Deeply or shallowly indented into lobes."},
+          {"id": "undulate", "label": "Undulate", "aliases": ["wavy"], "description": "Gently wavy margins."},
+          {"id": "revolute", "label": "Revolute", "aliases": [], "description": "Edges rolled under."}
+        ],
+        "shape": [
+          {"id": "ovate", "label": "Ovate", "aliases": [], "description": "Egg‑shaped; broader at base."},
+          {"id": "obovate", "label": "Obovate", "aliases": [], "description": "Egg‑shaped; broader toward tip."},
+          {"id": "elliptic", "label": "Elliptic", "aliases": [], "description": "Symmetrically widest in the middle."},
+          {"id": "lanceolate", "label": "Lanceolate", "aliases": [], "description": "Longer than wide; widest below the middle."},
+          {"id": "oblanceolate", "label": "Oblanceolate", "aliases": [], "description": "Widest above the middle."},
+          {"id": "linear", "label": "Linear", "aliases": [], "description": "Very narrow with parallel sides."},
+          {"id": "cordate", "label": "Cordate", "aliases": ["heart‑shaped"], "description": "Heart‑shaped base."},
+          {"id": "hastate", "label": "Hastate", "aliases": [], "description": "Spear‑shaped with basal lobes pointing outward."},
+          {"id": "sagittate", "label": "Sagittate", "aliases": [], "description": "Arrowhead‑shaped with basal lobes pointing downward."},
+          {"id": "reniform", "label": "Reniform", "aliases": ["kidney‑shaped"], "description": "Kidney‑shaped."},
+          {"id": "spatulate", "label": "Spatulate", "aliases": [], "description": "Spoon‑shaped; broad tip, narrow base."},
+          {"id": "orbicular", "label": "Orbicular", "aliases": ["round"], "description": "Approximately circular."}
+        ],
+        "apex": [
+          {"id": "acute", "label": "Acute", "aliases": [], "description": "Sharp‑pointed; angle < 90°."},
+          {"id": "acuminate", "label": "Acuminate", "aliases": [], "description": "Long taper to a fine point."},
+          {"id": "obtuse", "label": "Obtuse", "aliases": [], "description": "Blunt; angle > 90°."},
+          {"id": "rounded", "label": "Rounded", "aliases": [], "description": "Smoothly curved apex."},
+          {"id": "mucronate", "label": "Mucronate", "aliases": [], "description": "Small abrupt point at tip."},
+          {"id": "emarginate", "label": "Emarginate", "aliases": ["notched"], "description": "Shallow notch at tip."}
+        ],
+        "base": [
+          {"id": "acute_base", "label": "Acute", "aliases": [], "description": "Sharp‑angled base."},
+          {"id": "cuneate", "label": "Cuneate", "aliases": ["wedge‑shaped"], "description": "Tapers gradually to the petiole."},
+          {"id": "attenuate", "label": "Attenuate", "aliases": [], "description": "Long, narrow tapering base."},
+          {"id": "cordate_base", "label": "Cordate", "aliases": [], "description": "Heart‑shaped base with sinus."},
+          {"id": "rounded_base", "label": "Rounded", "aliases": [], "description": "Evenly curved base."},
+          {"id": "truncate", "label": "Truncate", "aliases": [], "description": "Square‑cut base."},
+          {"id": "oblique", "label": "Oblique", "aliases": ["inequilateral"], "description": "Unequal lobes at the base."}
+        ],
+        "surface": [
+          {"id": "glabrous", "label": "Glabrous", "aliases": ["hairless"], "description": "Smooth; lacking hairs."},
+          {"id": "pubescent", "label": "Pubescent", "aliases": ["hairy"], "description": "Soft hairs present."},
+          {"id": "tomentose", "label": "Tomentose", "aliases": [], "description": "Dense, matted woolly hairs."},
+          {"id": "scabrous", "label": "Scabrous", "aliases": [], "description": "Rough to the touch."},
+          {"id": "glaucous", "label": "Glaucous", "aliases": [], "description": "Bluish waxy bloom that rubs off."},
+          {"id": "rugose", "label": "Rugose", "aliases": ["wrinkled"], "description": "Wrinkled surface."},
+          {"id": "hispid", "label": "Hispid", "aliases": ["bristly"], "description": "Stiff bristly hairs."}
+        ],
+        "persistence": [
+          {"id": "deciduous", "label": "Deciduous", "aliases": [], "description": "Leaves shed seasonally."},
+          {"id": "evergreen", "label": "Evergreen", "aliases": [], "description": "Leaves persist for multiple seasons."},
+          {"id": "semi_evergreen", "label": "Semi‑evergreen", "aliases": [], "description": "Partially retains foliage over winter."},
+          {"id": "marcescent", "label": "Marcescent", "aliases": [], "description": "Dead leaves persist through winter."}
+        ],
+        "stipules": [
+          {"id": "present", "label": "Present", "aliases": [], "description": "Stipules occur at leaf base."},
+          {"id": "absent", "label": "Absent", "aliases": [], "description": "No stipules visible."},
+          {"id": "ochreate", "label": "Ochreate", "aliases": [], "description": "Sheathing stipules forming an ocrea (Polygonaceae)."}
+        ]
+      }
+    },
+    "bark": {
+      "attributes": {
+        "texture": [
+          {"id": "smooth", "label": "Smooth", "aliases": [], "description": "Even surface; few fissures."},
+          {"id": "fissured", "label": "Fissured", "aliases": [], "description": "Cracked into narrow splits."},
+          {"id": "furrowed", "label": "Furrowed", "aliases": [], "description": "Deep grooves between ridges."},
+          {"id": "scaly", "label": "Scaly", "aliases": [], "description": "Small scales flaking off."},
+          {"id": "flaky", "label": "Flaky", "aliases": ["peeling"], "description": "Thin flakes peeling from surface."},
+          {"id": "plated", "label": "Plated", "aliases": [], "description": "Large plates separated by fissures."},
+          {"id": "shaggy", "label": "Shaggy", "aliases": ["stringy"], "description": "Loose strips; ragged appearance."},
+          {"id": "fibrous", "label": "Fibrous", "aliases": [], "description": "Threadlike fibers visible."},
+          {"id": "ridged", "label": "Ridged", "aliases": [], "description": "Raised linear ridges present."},
+          {"id": "lenticellate", "label": "Lenticellate", "aliases": [], "description": "Conspicuous lenticels (pores)."}
+        ],
+        "color": [
+          {"id": "gray", "label": "Gray", "aliases": ["grey"], "description": "Neutral gray."},
+          {"id": "light_gray", "label": "Light gray", "aliases": [], "description": "Pale gray."},
+          {"id": "dark_gray", "label": "Dark gray", "aliases": [], "description": "Deep gray."},
+          {"id": "white", "label": "White", "aliases": [], "description": "Whitish bark."},
+          {"id": "silver", "label": "Silver", "aliases": [], "description": "Silvery sheen."},
+          {"id": "greenish", "label": "Greenish", "aliases": [], "description": "Green tint (often young bark)."},
+          {"id": "reddish_brown", "label": "Reddish brown", "aliases": [], "description": "Reddish cast."},
+          {"id": "brown", "label": "Brown", "aliases": [], "description": "Medium brown."},
+          {"id": "dark_brown", "label": "Dark brown", "aliases": [], "description": "Very dark brown."},
+          {"id": "black", "label": "Black", "aliases": [], "description": "Nearly black."}
+        ],
+        "pattern": [
+          {"id": "mottled", "label": "Mottled", "aliases": [], "description": "Irregular patches of color."},
+          {"id": "patchy", "label": "Patchy", "aliases": [], "description": "Larger irregular color plates."},
+          {"id": "ringed", "label": "Ringed", "aliases": [], "description": "Concentric rings or bands."},
+          {"id": "papery", "label": "Papery", "aliases": ["exfoliating"], "description": "Thin papery sheets peeling away."}
+        ],
+        "features": [
+          {"id": "prominent_lenticels", "label": "Prominent lenticels", "aliases": [], "description": "Large, conspicuous lenticels."},
+          {"id": "inconspicuous_lenticels", "label": "Inconspicuous lenticels", "aliases": [], "description": "Small or sparse lenticels."},
+          {"id": "resin_blisters", "label": "Resin blisters", "aliases": [], "description": "Raised blisters exuding resin (some conifers)."},
+          {"id": "corky_wings", "label": "Corky wings", "aliases": [], "description": "Corky ridges or wings on twigs/bark."}
+        ],
+        "thickness": [
+          {"id": "thin", "label": "Thin", "aliases": [], "description": "Easily cut or damaged."},
+          {"id": "medium", "label": "Medium", "aliases": [], "description": "Moderate thickness."},
+          {"id": "thick", "label": "Thick", "aliases": [], "description": "Substantial; protective."}
+        ],
+        "aroma": [
+          {"id": "aromatic", "label": "Aromatic", "aliases": [], "description": "Distinct pleasant scent."},
+          {"id": "resinous", "label": "Resinous", "aliases": [], "description": "Resin or pitch smell."},
+          {"id": "none", "label": "None", "aliases": ["odorless"], "description": "No distinct aroma."}
+        ]
+      }
+    },
+    "flower": {
+      "attributes": {
+        "symmetry": [
+          {"id": "actinomorphic", "label": "Actinomorphic (radial)", "aliases": ["radial"], "description": "Multiple planes of symmetry."},
+          {"id": "zygomorphic", "label": "Zygomorphic (bilateral)", "aliases": ["bilateral"], "description": "Single plane of symmetry."}
+        ],
+        "sex": [
+          {"id": "perfect", "label": "Perfect", "aliases": ["bisexual"], "description": "Both stamens and pistils present."},
+          {"id": "imperfect", "label": "Imperfect", "aliases": ["unisexual"], "description": "Only stamens or pistils present."},
+          {"id": "monoecious", "label": "Monoecious", "aliases": [], "description": "Male and female flowers on same plant."},
+          {"id": "dioecious", "label": "Dioecious", "aliases": [], "description": "Male and female flowers on separate plants."},
+          {"id": "polygamous", "label": "Polygamous", "aliases": [], "description": "Mixture of perfect and unisexual flowers."}
+        ],
+        "inflorescence": [
+          {"id": "solitary", "label": "Solitary", "aliases": [], "description": "Single flower per stalk."},
+          {"id": "spike", "label": "Spike", "aliases": [], "description": "Sessile flowers along an axis."},
+          {"id": "raceme", "label": "Raceme", "aliases": [], "description": "Stalked flowers along an axis."},
+          {"id": "panicle", "label": "Panicle", "aliases": [], "description": "Branched raceme."},
+          {"id": "cyme", "label": "Cyme", "aliases": [], "description": "Central flower opens first."},
+          {"id": "umbel", "label": "Umbel", "aliases": [], "description": "Stalks arise from common point."},
+          {"id": "corymb", "label": "Corymb", "aliases": [], "description": "Flat‑topped cluster with unequal stalks."},
+          {"id": "head", "label": "Head (capitulum)", "aliases": ["capitulum"], "description": "Dense cluster of small flowers (Asteraceae)."},
+          {"id": "spadix", "label": "Spadix", "aliases": [], "description": "Fleshy axis with often a spathe (Araceae)."},
+          {"id": "catkin", "label": "Catkin", "aliases": ["ament"], "description": "Pendulous spike of unisexual flowers."}
+        ],
+        "corolla_shape": [
+          {"id": "tubular", "label": "Tubular", "aliases": [], "description": "Tube‑shaped corolla."},
+          {"id": "campanulate", "label": "Campanulate (bell)", "aliases": ["bell"], "description": "Bell‑shaped corolla."},
+          {"id": "funnelform", "label": "Funnelform", "aliases": [], "description": "Funnel‑shaped corolla."},
+          {"id": "salverform", "label": "Salverform", "aliases": [], "description": "Slender tube with flat limb."},
+          {"id": "rotate", "label": "Rotate", "aliases": ["wheel"], "description": "Flat corolla with short tube."},
+          {"id": "bilabiate", "label": "Bilabiate", "aliases": ["two‑lipped"], "description": "Two distinct lips."},
+          {"id": "papilionaceous", "label": "Papilionaceous", "aliases": [], "description": "Pea‑flower type (banner, wings, keel)."},
+          {"id": "ligulate", "label": "Ligulate", "aliases": [], "description": "Strap‑shaped (ray florets)."}
+        ],
+        "perianth_fusion": [
+          {"id": "petals_free", "label": "Petals free", "aliases": ["polypetalous"], "description": "Petals not fused."},
+          {"id": "petals_fused", "label": "Petals fused", "aliases": ["gamopetalous"], "description": "Petals fused into a tube."},
+          {"id": "sepals_free", "label": "Sepals free", "aliases": [], "description": "Sepals not fused."},
+          {"id": "sepals_fused", "label": "Sepals fused", "aliases": [], "description": "Sepals fused."}
+        ],
+        "ovary_position": [
+          {"id": "superior", "label": "Superior", "aliases": [], "description": "Ovary above attachment of other parts."},
+          {"id": "half_inferior", "label": "Half‑inferior", "aliases": ["perigynous"], "description": "Partly embedded ovary."},
+          {"id": "inferior", "label": "Inferior", "aliases": [], "description": "Ovary below attachment of other parts."}
+        ],
+        "color": [
+          {"id": "white", "label": "White", "aliases": [], "description": null},
+          {"id": "yellow", "label": "Yellow", "aliases": [], "description": null},
+          {"id": "orange", "label": "Orange", "aliases": [], "description": null},
+          {"id": "red", "label": "Red", "aliases": [], "description": null},
+          {"id": "pink", "label": "Pink", "aliases": [], "description": null},
+          {"id": "purple", "label": "Purple", "aliases": [], "description": null},
+          {"id": "blue", "label": "Blue", "aliases": [], "description": null},
+          {"id": "green", "label": "Green", "aliases": [], "description": null},
+          {"id": "brown", "label": "Brown", "aliases": [], "description": null}
+        ],
+        "bloom_time": [
+          {"id": "spring", "label": "Spring", "aliases": [], "description": null},
+          {"id": "summer", "label": "Summer", "aliases": [], "description": null},
+          {"id": "fall", "label": "Fall", "aliases": ["autumn"], "description": null},
+          {"id": "winter", "label": "Winter", "aliases": [], "description": null}
+        ]
+      }
+    },
+    "fruit": {
+      "attributes": {
+        "type": [
+          {"id": "berry", "label": "Berry", "aliases": [], "description": "Fleshy fruit with one or more seeds; no stone."},
+          {"id": "drupe", "label": "Drupe", "aliases": ["stone fruit"], "description": "Fleshy with hard stone (endocarp)."},
+          {"id": "pome", "label": "Pome", "aliases": [], "description": "Fleshy accessory fruit (apples, pears)."},
+          {"id": "capsule", "label": "Capsule", "aliases": [], "description": "Dry fruit splitting open along seams."},
+          {"id": "follicle", "label": "Follicle", "aliases": [], "description": "Dry fruit splitting along one suture."},
+          {"id": "legume", "label": "Legume", "aliases": ["pod"], "description": "Dry fruit splitting along two sutures."},
+          {"id": "samara", "label": "Samara", "aliases": ["winged achene"], "description": "Winged, dry, indehiscent fruit."},
+          {"id": "achene", "label": "Achene", "aliases": [], "description": "Small, dry, one‑seeded; seed free inside."},
+          {"id": "caryopsis", "label": "Caryopsis", "aliases": ["grain"], "description": "Dry, one‑seeded; seed fused to wall."},
+          {"id": "nut", "label": "Nut", "aliases": [], "description": "Hard, dry, indehiscent with a single seed."},
+          {"id": "syconium", "label": "Syconium", "aliases": [], "description": "Enclosed multiple fruit (fig)."},
+          {"id": "schizocarp", "label": "Schizocarp", "aliases": [], "description": "Splits into one‑seeded mericarps."},
+          {"id": "cone", "label": "Cone", "aliases": ["strobilus"], "description": "Woody or fleshy cone (gymnosperms)."},
+          {"id": "aggregate", "label": "Aggregate", "aliases": [], "description": "Many simple fruits from one flower."},
+          {"id": "multiple", "label": "Multiple", "aliases": [], "description": "Fruits from multiple flowers fuse."}
+        ],
+        "dehiscence": [
+          {"id": "dehiscent", "label": "Dehiscent", "aliases": [], "description": "Opens at maturity to release seeds."},
+          {"id": "indehiscent", "label": "Indehiscent", "aliases": [], "description": "Does not open at maturity."}
+        ],
+        "texture": [
+          {"id": "fleshy", "label": "Fleshy", "aliases": [], "description": null},
+          {"id": "dry", "label": "Dry", "aliases": [], "description": null}
+        ],
+        "seed_features": [
+          {"id": "winged", "label": "Winged", "aliases": [], "description": null},
+          {"id": "arillate", "label": "Arillate", "aliases": ["aril"], "description": "Fleshy outgrowth (aril) present."},
+          {"id": "pitted", "label": "Pitted", "aliases": ["stone"], "description": "Hard endocarp surrounding seed."},
+          {"id": "numerous_seeds", "label": "Numerous seeds", "aliases": [], "description": null},
+          {"id": "few_seeds", "label": "Few seeds", "aliases": [], "description": null}
+        ],
+        "shape": [
+          {"id": "globose", "label": "Globose", "aliases": ["spherical"], "description": null},
+          {"id": "ovoid", "label": "Ovoid", "aliases": [], "description": null},
+          {"id": "oblong", "label": "Oblong", "aliases": [], "description": null},
+          {"id": "flattened", "label": "Flattened", "aliases": [], "description": null},
+          {"id": "winged", "label": "Winged", "aliases": [], "description": null}
+        ],
+        "color": [
+          {"id": "green", "label": "Green", "aliases": [], "description": null},
+          {"id": "yellow", "label": "Yellow", "aliases": [], "description": null},
+          {"id": "orange", "label": "Orange", "aliases": [], "description": null},
+          {"id": "red", "label": "Red", "aliases": [], "description": null},
+          {"id": "purple", "label": "Purple", "aliases": [], "description": null},
+          {"id": "black", "label": "Black", "aliases": [], "description": null},
+          {"id": "brown", "label": "Brown", "aliases": [], "description": null}
+        ],
+        "surface": [
+          {"id": "glabrous", "label": "Glabrous", "aliases": ["smooth"], "description": null},
+          {"id": "pubescent", "label": "Pubescent", "aliases": ["hairy"], "description": null},
+          {"id": "prickly", "label": "Prickly", "aliases": ["spiny"], "description": null},
+          {"id": "warty", "label": "Warty", "aliases": [], "description": null}
+        ]
+      }
+    },
+    "fungi": {
+      "attributes": {
+        "hymenium_type": [
+          {"id": "gills", "label": "Gills", "aliases": ["lamellae"], "description": "Blade‑like structures under cap."},
+          {"id": "pores", "label": "Pores", "aliases": ["tubes"], "description": "Pore surface (boletes, polypores)."},
+          {"id": "ridges", "label": "Ridges", "aliases": [], "description": "Wrinkled ridges (e.g., chanterelles)."},
+          {"id": "teeth", "label": "Teeth", "aliases": ["spines"], "description": "Tooth‑like spines (Hydnum)."},
+          {"id": "smooth", "label": "Smooth", "aliases": [], "description": "Even fertile surface."}
+        ],
+        "cap_shape": [
+          {"id": "convex", "label": "Convex", "aliases": [], "description": null},
+          {"id": "conical", "label": "Conical", "aliases": [], "description": null},
+          {"id": "campanulate", "label": "Campanulate (bell)", "aliases": ["bell"], "description": null},
+          {"id": "flat", "label": "Flat", "aliases": [], "description": null},
+          {"id": "umbonate", "label": "Umbonate", "aliases": ["with umbo"], "description": "Central bump present."},
+          {"id": "depressed", "label": "Depressed", "aliases": ["umbilicate"], "description": "Central depression present."},
+          {"id": "funnel", "label": "Funnel", "aliases": ["infundibuliform"], "description": "Funnel‑shaped."}
+        ],
+        "cap_surface": [
+          {"id": "smooth", "label": "Smooth", "aliases": [], "description": null},
+          {"id": "viscid", "label": "Viscid", "aliases": ["slimy"], "description": null},
+          {"id": "dry", "label": "Dry", "aliases": [], "description": null},
+          {"id": "fibrillose", "label": "Fibrillose", "aliases": [], "description": "Fibers on surface."},
+          {"id": "scaly", "label": "Scaly", "aliases": ["squamulose"], "description": null},
+          {"id": "warty", "label": "Warty", "aliases": [], "description": null}
+        ],
+        "cap_margin": [
+          {"id": "incurved", "label": "Incurved", "aliases": [], "description": null},
+          {"id": "straight", "label": "Straight", "aliases": [], "description": null},
+          {"id": "striate", "label": "Striate", "aliases": ["grooved"], "description": null},
+          {"id": "lobed", "label": "Lobed", "aliases": [], "description": null}
+        ],
+        "gill_attachment": [
+          {"id": "free", "label": "Free", "aliases": [], "description": "Not attached to stipe."},
+          {"id": "adnate", "label": "Adnate", "aliases": [], "description": "Broadly attached to stipe."},
+          {"id": "adnexed", "label": "Adnexed", "aliases": [], "description": "Narrowly attached."},
+          {"id": "decurrent", "label": "Decurrent", "aliases": [], "description": "Running down the stipe."},
+          {"id": "sinuate", "label": "Sinuate", "aliases": ["notched"], "description": "Notched near the stipe."}
+        ],
+        "gill_spacing": [
+          {"id": "crowded", "label": "Crowded", "aliases": [], "description": null},
+          {"id": "close", "label": "Close", "aliases": [], "description": null},
+          {"id": "distant", "label": "Distant", "aliases": [], "description": null}
+        ],
+        "stipe": [
+          {"id": "central", "label": "Central", "aliases": [], "description": null},
+          {"id": "eccentric", "label": "Eccentric", "aliases": [], "description": null},
+          {"id": "lateral", "label": "Lateral", "aliases": [], "description": null},
+          {"id": "absent", "label": "Absent", "aliases": ["sessile cap"], "description": null}
+        ],
+        "stipe_features": [
+          {"id": "ring_present", "label": "Ring present", "aliases": ["annulus"], "description": null},
+          {"id": "ring_absent", "label": "Ring absent", "aliases": [], "description": null},
+          {"id": "volva_present", "label": "Volva present", "aliases": [], "description": null},
+          {"id": "basal_bulb", "label": "Basal bulb", "aliases": [], "description": null}
+        ],
+        "stipe_surface": [
+          {"id": "smooth_stipe", "label": "Smooth", "aliases": [], "description": null},
+          {"id": "fibrillose_stipe", "label": "Fibrillose", "aliases": [], "description": null},
+          {"id": "scaly_stipe", "label": "Scaly", "aliases": [], "description": null}
+        ],
+        "bruising": [
+          {"id": "blue_staining", "label": "Blue staining", "aliases": ["blue bruising"], "description": null},
+          {"id": "red_brown_staining", "label": "Red/brown staining", "aliases": [], "description": null},
+          {"id": "no_bruising", "label": "None", "aliases": [], "description": null}
+        ],
+        "latex": [
+          {"id": "latex_white", "label": "White latex", "aliases": [], "description": null},
+          {"id": "latex_colored", "label": "Colored latex", "aliases": ["orange", "yellow", "red"], "description": null},
+          {"id": "latex_absent", "label": "Latex absent", "aliases": [], "description": null}
+        ],
+        "odor": [
+          {"id": "almond", "label": "Almond", "aliases": ["anise"], "description": null},
+          {"id": "phenolic", "label": "Phenolic", "aliases": ["ink", "carbolic"], "description": null},
+          {"id": "mealy", "label": "Mealy", "aliases": ["cucumber", "raw flour"], "description": null},
+          {"id": "fragrant", "label": "Fragrant", "aliases": [], "description": null},
+          {"id": "none", "label": "None", "aliases": ["odorless"], "description": null}
+        ],
+        "taste": [
+          {"id": "mild", "label": "Mild", "aliases": [], "description": null},
+          {"id": "bitter", "label": "Bitter", "aliases": [], "description": null},
+          {"id": "acrid", "label": "Acrid", "aliases": ["peppery"], "description": null},
+          {"id": "mealy_taste", "label": "Mealy", "aliases": [], "description": null}
+        ],
+        "spore_print_color": [
+          {"id": "white", "label": "White", "aliases": [], "description": null},
+          {"id": "cream", "label": "Cream", "aliases": [], "description": null},
+          {"id": "pink", "label": "Pink", "aliases": [], "description": null},
+          {"id": "salmon", "label": "Salmon", "aliases": [], "description": null},
+          {"id": "yellow", "label": "Yellow", "aliases": [], "description": null},
+          {"id": "olive", "label": "Olive", "aliases": [], "description": null},
+          {"id": "brown", "label": "Brown", "aliases": [], "description": null},
+          {"id": "rusty_brown", "label": "Rusty brown", "aliases": [], "description": null},
+          {"id": "chocolate", "label": "Chocolate", "aliases": [], "description": null},
+          {"id": "purple_brown", "label": "Purple‑brown", "aliases": [], "description": null},
+          {"id": "black", "label": "Black", "aliases": [], "description": null}
+        ],
+        "habitat": [
+          {"id": "soil", "label": "Soil", "aliases": ["ground"], "description": null},
+          {"id": "wood", "label": "Wood", "aliases": ["logs", "stumps"], "description": null},
+          {"id": "leaf_litter", "label": "Leaf litter", "aliases": [], "description": null},
+          {"id": "grass", "label": "Grass", "aliases": ["lawns"], "description": null},
+          {"id": "moss", "label": "Moss", "aliases": [], "description": null},
+          {"id": "dung", "label": "Dung", "aliases": [], "description": null},
+          {"id": "burned_ground", "label": "Burned ground", "aliases": ["post‑fire"], "description": null}
+        ],
+        "substrate": [
+          {"id": "hardwood", "label": "Hardwood", "aliases": ["broadleaf"], "description": null},
+          {"id": "conifer", "label": "Conifer", "aliases": ["softwood"], "description": null},
+          {"id": "soil_substrate", "label": "Soil", "aliases": [], "description": null},
+          {"id": "dung_substrate", "label": "Dung", "aliases": [], "description": null}
+        ],
+        "season": [
+          {"id": "spring", "label": "Spring", "aliases": [], "description": null},
+          {"id": "summer", "label": "Summer", "aliases": [], "description": null},
+          {"id": "fall", "label": "Fall", "aliases": ["autumn"], "description": null},
+          {"id": "winter", "label": "Winter", "aliases": [], "description": null}
+        ]
+      }
+    }
+  }
+}
