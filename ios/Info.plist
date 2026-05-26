@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleExecutable</key>
+  <string>$(EXECUTABLE_NAME)</string>
+  <key>CFBundleIdentifier</key>
+  <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleName</key>
+  <string>FloraGuide</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>1.0.0</string>
+  <key>CFBundleVersion</key>
+  <string>1</string>
+  <key>UILaunchScreen</key>
+  <dict/>
+  <key>UIApplicationSceneManifest</key>
+  <dict>
+    <key>UIApplicationSupportsMultipleScenes</key>
+    <false/>
+  </dict>
+  <key>NSCameraUsageDescription</key>
+  <string>Camera is used to capture plants and fungi for identification and to scan sketches.</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>Photo library access is used to import and save observation photos.</string>
+  <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>Photo library add access is used to save photos of observations.</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Location is used to add context (region, habitat) to observations.</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Microphone is used to optionally record observation notes.</string>
+</dict>
+</plist>
